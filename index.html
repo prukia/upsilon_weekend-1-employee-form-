@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Awesome Employee Form</title>
+  <script src=jquery.js></script>
+  <!-- you NEED to load jquery first -->
+  <script src="app.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Form section for new employee -->
+  <section>
+    <form id="newEmployeeForm">
+      <input type="text" name="firstName" placeholder="First Name" />
+      <input type="text" name="lastName" placeholder="Last Name"/>
+      <input type="number" name="number" placeholder="Employee ID"/>
+      <input type="text" name="title" placeholder="Title"/>
+      <input type="number" name="salary" placeholder="Salary"/>
+      <button type="submit" name="newEmployeeButton">Submit</button>
+      <!-- we can use placeholders instead of labels -->
+    </form>
+  </section>
+
+  <!-- Table of employees list -->
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Number</th>
+          <th>Title</th>
+          <th>Salary</th>
+          <!-- <th>Delete</th> -->
+        </tr>
+      </thead>
+      <tbody id="employeesTable">
+        <!-- This is where my new rows will go -->
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- Salary Total Section -->
+  <section>
+    Monthly Salary Expenditures: <span id="monthlySalary">0</span>
+    <!-- span does does not change anything in styling -->
+  </section>
+
+
+</body>
+</html>
